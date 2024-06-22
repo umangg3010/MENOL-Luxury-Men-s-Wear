@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(./image/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar .logo {
+  padding: 12px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.navbar .menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.navbar .menu ul li a {
+  color: white;
+  padding: 10px 0;
+  display: inline-block;
+  transition: all ease 0.3s;
+  font-size: 15px;
+}
+
+.navbar .menu ul li a:hover {
+  color: rgb(154, 152, 152);
+}
+
+.navbar .menu .submenu {
+  position: absolute;
+  width: 200px;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin-top: -50px;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease 0.5s;
+}
+
+.navbar ul li:hover .submenu {
+  z-index: 99;
+  opacity: 1;
+  margin-top: 33px;
+  margin-left: -78px;
+}
+
+.navbar ul .submenu li a {
+  padding: 15px 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.navbar ul .submenu li a:hover {
+  color: rgb(154, 152, 152);
+}
+
+.home {
+  color: white;
+  width: 520px;
+  margin: auto;
+  text-align: center;
+}
+
+.home .home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  height: 100vh;
+  font-size: 18px;
+}
+.home .home-section .btn {
+  background: transparent;
+  border: 2px solid white;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.home .home-section .btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(154, 152, 152);
+}
+
+.section-is-white1, .section-is-white2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 80px 0;
+}
+.section-is-white1 .img-section, .section-is-white2 .img-section {
+  width: 580px;
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+  height: 450px;
+}
+.section-is-white1 img, .section-is-white2 img {
+  box-shadow: 2px 2px 6px grey;
+  width: 350px;
+}
+
+.section-is-white1 .text-section, .section-is-white2 .text-section {
+  margin: 0 50px;
+  gap: 2px;
+  letter-spacing: 5px;
+  font-style: 0;
+}
+.section-is-white1 .text-section h2, .section-is-white2 .text-section h2 {
+  font-size: 30px;
+  padding: 30px;
+}
+.section-is-white1 .text-section ul, .section-is-white2 .text-section ul {
+  list-style: none;
+  padding: 30px;
+}
+.section-is-white1 .text-section ul li, .section-is-white2 .text-section ul li {
+  margin-top: 15px;
+}
+.section-is-white1 .text-section ul li a, .section-is-white2 .text-section ul li a {
+  color: black;
+}
+
+.section-is-white1 .text-section ul li a:hover, .section-is-white2 .text-section ul li a:hover {
+  color: rgb(154, 152, 152);
+}
+
+.section-is-black1, .section-is-black2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 80px 0;
+}
+.section-is-black1 .img-section, .section-is-black2 .img-section {
+  width: 580px;
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+  height: 450px;
+}
+.section-is-black1 img, .section-is-black2 img {
+  box-shadow: 2px 2px 6px grey;
+  width: 350px;
+}
+
+.section-is-black1 .text-section, .section-is-black2 .text-section {
+  margin: 0 50px;
+  gap: 2px;
+  letter-spacing: 5px;
+  font-style: 0;
+}
+.section-is-black1 .text-section h2, .section-is-black2 .text-section h2 {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.section-is-black1 .text-section ul, .section-is-black2 .text-section ul {
+  list-style: none;
+  padding: 30px;
+}
+.section-is-black1 .text-section ul li, .section-is-black2 .text-section ul li {
+  margin-top: 15px;
+}
+.section-is-black1 .text-section ul li a, .section-is-black2 .text-section ul li a {
+  color: white;
+}
+
+.section-is-black1 .text-section ul li a:hover, .section-is-black2 .text-section ul li a:hover {
+  color: rgb(154, 152, 152);
+}
+
+.section-is-white3 {
+  height: 450px;
+  padding: 30px 50px;
+  width: 100%;
+  margin: auto;
+}
+.section-is-white3 h2 {
+  font-size: 30px;
+  padding: 30px;
+  color: black;
+  letter-spacing: 5px;
+}
+.section-is-white3 .img-section img {
+  width: 280px;
+  height: 250px;
+  display: flex;
+}
+.section-is-white3 .text-section {
+  padding: 30px;
+  color: black;
+  letter-spacing: 5px;
+}
+.section-is-white3 .text-section ul {
+  list-style: none;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 220px;
+}
+.section-is-white3 .text-section ul li a {
+  color: black;
+}
+
+.section-is-white3 .img-section img:hover {
+  box-shadow: 5px 5px 10px grey;
+}
+
+.img-section img:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(30%);
+  transition: all 4s;
+}
+
+.imghidden {
+  display: flex;
+  opacity: 0;
+  margin-left: 10px;
+  filter: blur(5px);
+  transform: translatex(-100%);
+  transition: all 4s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(154, 152, 152);
+}
+.footer .footer-section {
+  display: flex;
+}
+.footer .footer-section .footer-section1 {
+  display: flex;
+  gap: 50px;
+  padding: 20px 80px;
+}
+.footer .footer-section .footer-section1 a {
+  color: rgb(154, 152, 152);
+  letter-spacing: 3px;
+}
+.footer .footer-section .footer-section2 {
+  display: flex;
+  gap: 30px;
+  padding: 20px 80px;
+}
+.footer .footer-section .footer-section2 a {
+  color: white;
+  letter-spacing: 3px;
+  color: rgb(154, 152, 152);
+}
+.footer .para {
+  text-align: center;
+}
+
+.footer .footer-section a:hover, .footer .footer-section i:hover {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
